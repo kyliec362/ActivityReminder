@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/rel_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#1D2733"
+    tools:context="com.example.practice1.Friends"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#34495E"
+        android:gravity="center"
+        android:text="Available Friends"
+        android:textColor="#FFFFFD"
+        android:textSize="23sp"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        />
+
+
+</RelativeLayout>

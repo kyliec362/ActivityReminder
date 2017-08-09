@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_layout"
+    android:background="#1D2733"
+    tools:context="com.example.practice1.AddDoNotDisturbTime">
+
+
+    <TextView
+        android:id="@+id/tTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#34495E"
+        android:gravity="center"
+        android:text="Do Not Disturb Times"
+        android:textColor="#FFFFFD"
+        android:textSize="23sp"/>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tTitle"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/details"/>
+
+    <TableLayout android:id="@+id/details"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:stretchColumns="1"
+        android:shrinkColumns="1">
+        <TableRow>
+            <EditText
+                android:id="@+id/event_description"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:text="Enter Description"
+                android:textColor="#C1C0BC"
+                android:onClick="clearText"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp"/>
+        </TableRow>
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Start Time"
+                    android:textColor="#C1C0BC"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20dp"    />
+
+                <Spinner
+                    android:id="@+id/hour_spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"/>
+
+
+                <Spinner
+                    android:id="@+id/minute_spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/am_pm_spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#C1C0BC"
+                    android:text="Set End Time"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"  />
+
+                <Spinner
+                    android:id="@+id/hour_spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp" />
+
+
+                <Spinner
+                    android:id="@+id/minute_spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/am_pm_spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#C1C0BC"
+                android:text="Set Frequency"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:textSize="20sp"  />
+            <Spinner
+                android:id="@+id/freq_spinner"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/submitTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Do Not Disturb Time"
+                android:background="@drawable/rounded_edge"
+                android:textColor="#C1C0BC"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="submitData"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Clear Do Not Disturb Times"
+                android:background="@drawable/rounded_edge"
+                android:textColor="#C1C0BC"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="clearTimes"/>
+        </TableRow>
+
+</TableLayout>
+
+
+
+</RelativeLayout>
+
+

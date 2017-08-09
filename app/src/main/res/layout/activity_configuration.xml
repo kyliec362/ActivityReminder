@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.practice1.Preferences"
+    android:background="#1D2733"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tTitle"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#34495E"
+        android:gravity="center"
+        android:text="Configuration"
+        android:textColor="#FFFFFD"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/button_doNotDisturb"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_edge"
+        android:text="Do Not Disturb Times"
+        android:onClick="updateDoNotDisturbTimes"
+        android:textColor="#C1C0BC"
+        android:layout_below="@+id/tTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button_activityPreferences"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_edge"
+        android:text="Activity Preferences"
+        android:onClick="updateActivityPreferences"
+        android:textColor="#C1C0BC"
+        android:layout_below="@+id/button_doNotDisturb"
+        android:layout_alignLeft="@+id/button_doNotDisturb"
+        android:layout_alignStart="@+id/button_doNotDisturb"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/bAccount"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_edge"
+        android:text="Account"
+        android:onClick="goToAccount"
+        android:textColor="#C1C0BC"
+        android:layout_below="@+id/button_activityPreferences"
+        android:layout_alignLeft="@+id/button_doNotDisturb"
+        android:layout_alignStart="@+id/button_doNotDisturb"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.practice1.WorkoutSelection"
+    android:background="#1D2733">
+
+
+    <TextView
+        android:id="@+id/tTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#34495E"
+        android:gravity="center"
+        android:text="Select A Workout"
+        android:textColor="#FFFFFD"
+        android:textSize="23sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/nf"
+        android:textSize="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="#FFFFFD"
+        android:layout_below="@id/tTitle"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tRecommended"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1D2733"
+        android:paddingTop="10dp"
+        android:layout_below="@id/nf"
+        android:text="Recommended Activities"
+        android:textColor="#FFFFFD"
+        android:textSize="23sp"
+       />
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_height="140dp"
+        android:layout_below="@id/tRecommended"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/tTimes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1D2733"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/list_view"
+        android:text="Available Start Times"
+        android:textColor="#FFFFFD"
+        android:textSize="23sp"
+        />
+
+    <ListView
+        android:id="@+id/list_view2"
+        android:layout_height="140dp"
+        android:layout_below="@id/tTimes"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:id="@+id/bShowAll"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Show All Activities"
+        android:background="@drawable/rounded_edge"
+        android:textColor="#C1C0BC"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="showAll"
+        android:layout_below="@id/list_view2"/>
+
+    <Button
+        android:id="@+id/bSchedule"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Schedule Now"
+        android:background="@drawable/rounded_edge"
+        android:textColor="#C1C0BC"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="schedule"
+        android:layout_below="@id/bShowAll"/>
+
+
+
+</RelativeLayout>

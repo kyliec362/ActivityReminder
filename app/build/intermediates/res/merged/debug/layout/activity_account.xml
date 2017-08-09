@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.practice1.Account1"
+    android:background="#1D2733">
+
+
+    <TextView
+        android:id="@+id/tTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#34495E"
+        android:gravity="center"
+        android:text="Account Settings"
+        android:textColor="#FFFFFD"
+        android:textSize="23sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"/>
+
+    <Button
+        android:id="@+id/bSignOut"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edge"
+        android:onClick="signOut"
+        android:text="Sign Out"
+        android:textColor="#C1C0BC"
+        />
+
+
+    <Button
+        android:id="@+id/bVerifyEmail"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_edge"
+        android:onClick="verifyEmail"
+        android:text="Verify Email"
+        android:textColor="#C1C0BC"
+
+        />
+    </LinearLayout>
+
+
+
+
+

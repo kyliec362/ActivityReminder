@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.practice1.About"
+    android:background="#1D2733"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="309dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Activity Reminder is an application for Android OS. It's purpose is to remind the user to add physical activity whenever possible. It takes into account the user's schedule and habits, and it calls for action appropriately. The application will help reach personal milestones daily and motivate personal fitness."
+        android:textColor="#FFFFFD"
+        android:textSize="19dp"
+        android:layout_weight="0.87" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:text="This app was created by Kylie Chesner, Vyshnavi Khota, Keon Kim, Roshni Patel, and Alexandra Bullen- Smith"
+        android:textColor="#FFFFFD"
+        android:textSize="10dp" />
+
+
+</LinearLayout>
