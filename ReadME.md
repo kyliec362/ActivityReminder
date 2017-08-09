@@ -1,6 +1,7 @@
 
 
-##Description
+## Description
+
 This is the activity reminder application. This app is intended to remind the user to incorporate physical activity whenever possible. This app is effectively tailored to each individual user by linking with google calendar, local weather, location, and friends and providing recommendations for the appropriate activity and time. Activity Reminder removes many of the barriers and excuses inherent in maintaining a workout regime. 
 
 
@@ -16,6 +17,7 @@ Notable features include,
 -Sign-in authentication from server side allows users to access account various devices
 
 
-##DISCLAIMER
+## DISCLAIMER
+
 DISCLAIMER: the creators of this app take no responsibilitiy for any damage or for any indirect, special or consequential loss that happens due to this application. Things like availibility status may be shared with other members who are also using the app. By downloading this app, you acknowledge that any use shall be at your own/sole risk and consequences attached there to.
 
